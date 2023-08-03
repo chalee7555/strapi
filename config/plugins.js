@@ -2,11 +2,10 @@ module.exports = ({ env }) => ({
     "vercel-deploy": {
       enabled: true,
       config: {
-        deployHook: env.VERCEL_DEPLOY_PLUGIN_HOOK,
-        apiToken: env.VERCEL_DEPLOY_PLUGIN_API_TOKEN,
-        appFilter: env.VERCEL_DEPLOY_PLUGIN_APP_FILTER,
-        teamFilter: env.VERCEL_DEPLOY_PLUGIN_TEAM_FILTER,
-        roles: ["strapi-super-admin"],
+        deployHook:"https://api.vercel.com/v1/integrations/deploy/prj_3NkaFIRBqyxDiz4RhA0rnH1E3H0b/6HesBJ8AyB",
+        apiToken: "7Ao0xKRJ6FoogA3Qk70NSfUa",
+        appFilter: "strapi",
+       roles: ["strapi-super-admin", "strapi-editor", "strapi-author"],
       },
     },
   });
